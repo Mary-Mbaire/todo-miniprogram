@@ -1,0 +1,9 @@
+{
+  "modes": [
+    {
+      "title": "todo-form",
+      "page": "pages/todo-form/todo-form",
+      "pageQuery": ""
+    }
+  ]
+}

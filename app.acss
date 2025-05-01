@@ -1,0 +1,5 @@
+page {
+  padding: 24rpx;
+  min-height: 100vh;
+  background: #f7f7f7;
+}

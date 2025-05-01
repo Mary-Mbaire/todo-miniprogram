@@ -1,0 +1,30 @@
+<view class="list-container">
+  <view class="header-container">
+    <view class="list-heading">To Do List</view>
+    <a-button
+      type="primary" 
+      size="small"
+      class="add-btn"
+      onTap="goToAdd">
+        Add Todo
+      </a-button>
+  </view>
+   
+  <a-list>
+    <block a:for="{{todos}}" a:key="id" a:for-item="todo">
+      <a-list-item>
+        <view class="todo-item">
+          <view class="todo-content">
+            <a-checkbox onChange="handleToggleComplete" data-id={{ todo.id }} />
+            <view class="todo-label {{ item.completed ? 'completed' : '' }}">{{ todo.title }}</view>
+          </view>
+          <view class="action-btns">
+            <a-icon type="EditSOutline" style="color: green" onTap="editTodo" data-id={{todo.id}} />
+            <a-icon type="DeleteOutline" style="color: red" onTap="deleteTodo" data-id={{todo.id}} />
+          </view>
+        </view>
+      </a-list-item>
+    </block>
+  </a-list>
+
+</view>

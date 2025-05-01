@@ -1,0 +1,25 @@
+<view class="form-container">
+  <view class="form-heading">
+    <view class="title">{{ isEditing ? 'Edit Task' : 'New Task' }}</view>
+  </view>
+
+  <form onSubmit="handleSubmit">
+    <a-container>
+      <a-input
+        name="title"
+        placeholder="Enter task"
+        value={{ form.title }}
+        onChange="onInput"
+        allowClear />
+    </a-container>
+    <view class="error-text">{{ errors.title }}</view>
+
+    <a-button
+      type="primary"
+      size="small"
+      formType="submit"
+      className="submit-btn">
+      Submit
+    </a-button>
+  </form>
+</view>
