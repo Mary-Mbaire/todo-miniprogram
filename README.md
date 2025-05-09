@@ -1,6 +1,6 @@
 # To Do Mini Program
 
-I built a task tracker mini program using **Alipay Mini Program Studio** to test my knowledge in Mini Applications Development Silver Program by Moringa School
+I built a task tracker mini program using **Alipay Mini Program Studio** to demonstrate my knowledge in Mini Applications Development Silver Program by Moringa School
 
 ## Mini app requirements for the project
 - Have at least 1 form accepting input

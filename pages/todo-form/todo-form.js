@@ -67,10 +67,10 @@ Page({
         method: 'PUT',
         data: { id, title, completed: false, userId: this.data.userId },
         success: () => {
-          updateTodo(id, { title, completed: false, userId: this.data.userId });
+          updateTodo(id, { title, completed: false });
           my.showToast({
             type: 'success',
-            content: "Task  successfully",
+            content: "Task added successfully",
             duration: 2000
           })
           my.navigateBack();;
