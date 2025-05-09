@@ -70,7 +70,7 @@ Page({
           updateTodo(id, { title, completed: false, userId: this.data.userId });
           my.showToast({
             type: 'success',
-            content: "Task added successful",
+            content: "Task  successfully",
             duration: 2000
           })
           my.navigateBack();;
@@ -93,7 +93,7 @@ Page({
 
           my.showToast({
             type: 'success',
-            content: "Task added successful",
+            content: "Task added successfully",
             duration: 2000
           })
           my.navigateBack();;

@@ -21,7 +21,7 @@ export function addTodo(todo) {
 
 export function updateTodo(id, updatedTodo) {
   const todos = getCachedTodos();
-  const updated = todos.map(todo => (todo.id === id ? { ...todo, ...updatedTodo } : todo))
+  const updated = todos.map(todo => (todo.id === id ? { ...todo, ...updatedTodo } : todo));
   setCachedTodos(updated);
   return updated;
 }

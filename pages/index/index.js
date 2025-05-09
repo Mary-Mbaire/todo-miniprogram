@@ -83,7 +83,7 @@ Page({
     my.navigateTo({ url: '/pages/todo-form/todo-form' });
   },
   handleToggleComplete(e) {
-    const id = e.target.dataset.id;
+    const id = e.currentTarget.dataset.id;
     const updated = toggleCompleted(id);
     this.setData({ todos: updated });
   }
